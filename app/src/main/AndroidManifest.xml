@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cdlit.assetmaintenanceapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/asset_v5"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/asset_v4"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Ui.ActivityLogin"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.ActivityNavigationDrawerAdmin"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".Ui.ActivityChangePassword"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_change_password"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".Ui.ActivityListEquipments"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_equipment_list_equipment"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".Ui.ActivityEquipmentChecklist"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_equipment_checklist"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity
+            android:name=".Ui.ActivityEquipmentChecklistDetail"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_equipment_checklist_detail"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+        </activity>
+
+        <activity
+            android:name=".Ui.ActivitySettings"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_equipment_type_model"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <activity
+            android:name=".Ui.ActivityFaultLogDetail"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_fault_log_detail"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+
+    </application>
+
+</manifest>

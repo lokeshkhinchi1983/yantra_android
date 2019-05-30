@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarDefaultDelayBeforeFade="5000"
+    android:scrollbarFadeDuration="0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_grey"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Personnel Name"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="8dp"
+                android:text="Personnel Name"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Personnel Type *"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_user_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_privilege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Privilege *"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Read - Write - Delete)"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_small" />
+
+                <!--  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="-&#45;&#45;W-&#45;&#45;"
+                      android:textColor="@color/text_color_primary"
+                      android:textSize="@dimen/text_size_medium" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="D&#45;&#45;"
+                      android:textColor="@color/text_color_primary"
+                      android:textSize="@dimen/text_size_medium" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Location"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_location_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_location_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_location_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Personnel Setup"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_manage_user_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_manage_user_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_manage_user_D"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+            <!--
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:text="Category"
+                         android:textColor="@color/text_color_primary"
+                         android:textSize="@dimen/text_size_medium" />
+
+                     <CheckBox
+                         android:id="@+id/cb_category_R"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_margin="4dp"
+                         android:textColor="@color/text_color_primary"
+                         android:textSize="@dimen/text_size_medium" />
+
+                     <CheckBox
+                         android:id="@+id/cb_category_W"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_margin="4dp"
+                         android:textColor="@color/text_color_primary"
+                         android:textSize="@dimen/text_size_medium" />
+
+                     <CheckBox
+                         android:id="@+id/cb_category_D"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_margin="4dp"
+                         android:textColor="@color/text_color_primary"
+                         android:textSize="@dimen/text_size_medium" />
+
+                 </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Asset Category"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_type_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_type_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_type_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Asset Setup"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Asset Timeline"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_timeline_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_timeline_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_timeline_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Asset Checklist"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_checklist_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_checklist_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_equipment_checklist_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Assign Asset To Personnel"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_assign_to_user_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_assign_to_user_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_assign_to_user_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Maintenance Log"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_repairlog_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_repairlog_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_repairlog_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fault Log"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_faultlog_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_faultlog_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_faultlog_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="My Checklist"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_user_R"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_user_W"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <CheckBox
+                    android:id="@+id/cb_user_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/light_grey" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

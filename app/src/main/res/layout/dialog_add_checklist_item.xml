@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarDefaultDelayBeforeFade="5000"
+
+    android:scrollbarFadeDuration="0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_grey"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Checklist Name *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_checklist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Checklist name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Checklist Description *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_checklist_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Checklist description"
+            android:inputType="text|textMultiLine"
+            android:lines="2"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Checklist Frequency *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/checklist_freq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_week_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Week Day *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:id="@+id/ll_week_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_week_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_month_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Month Day *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <EditText
+            android:id="@+id/et_month_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Month day ( 1 - 31 )"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_other_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Other Day *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Checklist Type *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:id="@+id/ll_checklist_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_checklist_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/light_grey" />
+    </LinearLayout>
+
+</ScrollView>

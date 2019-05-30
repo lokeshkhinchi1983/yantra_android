@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        card_view:cardBackgroundColor="@color/light_grey"
+        card_view:cardCornerRadius="@dimen/card_corner"
+        card_view:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_service_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Name / Freq / No. "
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_service_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="service name"
+                        android:textColor="@color/text_color_primary_light"
+                        android:textSize="@dimen/text_size_medium" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_last_service_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Service Date"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_last_service_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Last service date"
+                        android:textColor="@color/text_color_primary_light"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_next_service_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next Service Date"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_next_service_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Next service date"
+                        android:textColor="@color/text_color_primary_light"
+                        android:textSize="@dimen/text_size_medium" />
+
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="6dp"
+                app:srcCompat="@drawable/ic_delete_black_18px" />
+
+
+            <!-- <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/image_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:padding="6dp"
+                 app:srcCompat="@drawable/ic_mode_edit_black_18px" />-->
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

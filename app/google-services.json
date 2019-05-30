@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "167359940492",
+    "firebase_url": "https://asset-maintenance-app.firebaseio.com",
+    "project_id": "asset-maintenance-app",
+    "storage_bucket": "asset-maintenance-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167359940492:android:9e9bad8b6c78ceb0",
+        "android_client_info": {
+          "package_name": "com.cdlit.assetmaintenanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167359940492-uov2srf9klp43dd91f63ftlt9n52qrgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cdlit.assetmaintenanceapp",
+            "certificate_hash": "8e043249ba5df6eb9d31f5b1e71648c6060fd714"
+          }
+        },
+        {
+          "client_id": "167359940492-uk3opkj36u6pb1ib0ugoa2ihrl03de94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cdlit.assetmaintenanceapp",
+            "certificate_hash": "b99a45d3d4f9f7710fd918e81cea269667e1596c"
+          }
+        },
+        {
+          "client_id": "167359940492-650osc7tebbvu6ibdhrhgbgb0tq1llg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChS1OiXRHhUhJY5josqWBBl2RTUZUzT1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167359940492-650osc7tebbvu6ibdhrhgbgb0tq1llg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

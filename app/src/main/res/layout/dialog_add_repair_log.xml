@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarDefaultDelayBeforeFade="5000"
+    android:scrollbarFadeDuration="0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_grey"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Location *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Asset Category *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_equipment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Asset *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_select_fault_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Select Fault/Task Log *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_fault_task_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bt_fault_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:text="Fault log"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/bt_task_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:text="Task logs"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Maintenance Log Cost *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_repair_log_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Maintenance log cost"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Maintenance Log *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_repair_log_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Maintenance log description"
+            android:inputType="text|textMultiLine"
+            android:lines="2"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Agency Name"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_agency_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Agency name"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Contact Person Name *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_contact_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Contact person name"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Contact Person Number *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_contact_person_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Contact person number"
+            android:inputType="phone"
+            android:lines="1"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Maintenance Log Date *"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.cdlit.assetmaintenanceapp.Utils.CustomTextView
+            android:id="@+id/tv_repairlog_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:text="Select Maintenance Log Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_medium"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black_18px" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Miles / Hours "
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_miles_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_miles_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:visibility="gone"
+            android:text="Enter Miles / Hours "
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_miles_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter miles / hours"
+            android:inputType="phone"
+            android:lines="1"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Image"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_select_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_repair_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:scrollbars="horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/light_grey" />
+
+    </LinearLayout>
+</ScrollView>

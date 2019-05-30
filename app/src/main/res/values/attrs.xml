@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomTextView">
+        <attr name="drawableLeftCompat" format="reference" />
+        <attr name="drawableRightCompat" format="reference" />
+        <attr name="drawableTopCompat" format="reference" />
+        <attr name="drawableBottomCompat" format="reference" />
+    </declare-styleable>
+</resources>

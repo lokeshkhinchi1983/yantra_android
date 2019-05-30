@@ -1,0 +1,121 @@
+package com.cdlit.assetmaintenanceapp.Model;
+
+import java.util.List;
+
+/**
+ * Created by rakesh on 21-06-2017.
+ */
+
+public class EquipmentTypeAddResponse {
+
+    private Integer id;
+
+    private String createdDate;
+
+    private Integer createdUser;
+
+    private String description;
+
+    private String equipmentTypeName;
+
+    private Integer isActive;
+
+    private String modifiedDate;
+
+    private Integer modifiedUser;
+
+    private EquipmentTypeAddResponseCategory category;
+
+    private List<EquipmentTypeAddResponseImages> equipmentTypeImages;
+
+    private String catId;
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return this.id;
+    }
+
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public String getCreatedDate() {
+        return this.createdDate;
+    }
+
+    public void setCreatedUser(Integer createdUser) {
+        this.createdUser = createdUser;
+    }
+
+    public Integer getCreatedUser() {
+        return this.createdUser;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setEquipmentTypeName(String equipmentTypeName) {
+        this.equipmentTypeName = equipmentTypeName;
+    }
+
+    public String getEquipmentTypeName() {
+        return this.equipmentTypeName;
+    }
+
+    public void setIsActive(Integer isActive) {
+        this.isActive = isActive;
+    }
+
+    public Integer getIsActive() {
+        return this.isActive;
+    }
+
+    public void setModifiedDate(String modifiedDate) {
+        this.modifiedDate = modifiedDate;
+    }
+
+    public String getModifiedDate() {
+        return this.modifiedDate;
+    }
+
+    public void setModifiedUser(Integer modifiedUser) {
+        this.modifiedUser = modifiedUser;
+    }
+
+    public Integer getModifiedUser() {
+        return this.modifiedUser;
+    }
+
+    public void setCategory(EquipmentTypeAddResponseCategory category) {
+        this.category = category;
+    }
+
+    public EquipmentTypeAddResponseCategory getCategory() {
+        return this.category;
+    }
+
+    public void setEquipmentTypeImages(List<EquipmentTypeAddResponseImages> equipmentTypeImages) {
+        this.equipmentTypeImages = equipmentTypeImages;
+    }
+
+    public List<EquipmentTypeAddResponseImages> getEquipmentTypeImages() {
+        return this.equipmentTypeImages;
+    }
+
+    public void setCatId(String catId) {
+        this.catId = catId;
+    }
+
+    public String getCatId() {
+        return this.catId;
+    }
+
+}

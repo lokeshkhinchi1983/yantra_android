@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarDefaultDelayBeforeFade="5000"
+
+    android:scrollbarFadeDuration="0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_grey"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <!--  <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+              android:layout_marginLeft="24dp"
+              android:layout_marginRight="24dp"
+              android:text="Annual Service Date"
+              android:textColor="@color/text_color_primary"
+              android:textSize="@dimen/text_size_small" />
+
+          <com.cdlit.assetmaintenanceapp.Utils.CustomTextView
+              android:id="@+id/tv_annual_service_date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+              android:layout_marginLeft="24dp"
+              android:layout_marginRight="24dp"
+              android:background="@drawable/edittext_background"
+              android:padding="8dp"
+              android:text="Select Annual Service Date"
+              android:textColor="@color/text_color_primary"
+              android:textSize="@dimen/text_size_medium"
+              app:drawableRightCompat="@drawable/ic_arrow_drop_down_black_18px" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Manufacture Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.cdlit.assetmaintenanceapp.Utils.CustomTextView
+            android:id="@+id/tv_manufacture_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:text="Select Manufacture Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_medium"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black_18px" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Expiry Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.cdlit.assetmaintenanceapp.Utils.CustomTextView
+            android:id="@+id/tv_expiry_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:text="Select Expiry Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_medium"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black_18px" />
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Last Service Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.cdlit.assetmaintenanceapp.Utils.CustomTextView
+            android:id="@+id/tv_last_service_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:text="Select Last Service Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_medium"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black_18px" />-->
+
+<!--
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Next Service Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.cdlit.assetmaintenanceapp.Utils.CustomTextView
+            android:id="@+id/tv_due_service_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:text="Select Next Service Date"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_medium"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black_18px" />
+-->
+
+
+        <!--  <EditText
+              android:id="@+id/et_inspection_duration"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+              android:layout_marginLeft="24dp"
+              android:layout_marginRight="24dp"
+              android:background="@drawable/edittext_background"
+              android:hint="Inspection duration"
+              android:inputType="number"
+              android:padding="8dp"
+              android:lines="1"
+              android:textColor="@color/text_color_primary"
+              android:textColorHint="@color/text_color_primary_light"
+              android:textSize="@dimen/text_size_medium" />-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Asset Model Description"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_equipment_model_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Asset model description"
+            android:inputType="text|textMultiLine"
+            android:lines="2"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium"
+
+            />
+
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:layout_marginLeft="24dp"
+             android:layout_marginRight="24dp"
+             android:text="Asset Model Service Type"
+             android:textColor="@color/text_color_primary"
+             android:textSize="@dimen/text_size_small" />
+
+         <EditText
+             android:id="@+id/et_add_equipment_model_service_type"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:layout_marginLeft="24dp"
+             android:layout_marginRight="24dp"
+             android:background="@drawable/edittext_background"
+             android:hint="Asset model service type"
+             android:inputType="text"
+             android:lines="1"
+             android:padding="8dp"
+             android:textColor="@color/text_color_primary"
+             android:textColorHint="@color/text_color_primary_light"
+             android:textSize="@dimen/text_size_medium" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Asset Model Serial No"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_equipment_model_serial_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Asset model serial no"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="8dp"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Reminder Duration"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_add_reminder_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Reminder duration(in days)"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="8dp"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Remarks"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_small" />
+
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Remarks"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="8dp"
+            android:textColor="@color/text_color_primary"
+            android:textColorHint="@color/text_color_primary_light"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Image"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_select_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_equipment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:scrollbars="horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/light_grey" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

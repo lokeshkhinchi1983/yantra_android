@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="actionModeBackground">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@drawable/dialog_background</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="buttonBarPositiveButtonStyle">@style/dialog_button.positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/dialog_button.negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/dialog_button.neutral</item>
+
+        <!--  <item name="android:windowTitleStyle">@style/dialog_title</item>-->
+
+    </style>
+
+    <style name="DialogAnimation_fad_in_out">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="DialogAnimation_bottom_to_top">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+
+    <style name="dialog_button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:minHeight">40dp</item>
+
+        <!-- <item name="android:layout_margin">2dp</item>-->
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <!-- <item name="android:paddingTop">8dp</item>
+         <item name="android:paddingBottom">8dp</item>-->
+
+        <!--  <item name="android:layout_marginTop">2dp</item>-->
+        <!--    <item name="android:layout_marginBottom">2dp</item>-->
+
+    </style>
+
+    <style name="dialog_button.neutral">
+        <!--
+                <item name="android:textStyle">bold</item>
+        -->
+        <item name="android:textColor">@color/text_color_primary_dark</item>
+        <item name="android:background">@drawable/dialog_negative_button_background</item>
+    </style>
+
+    <style name="dialog_button.negative">
+        <!--
+                <item name="android:textStyle">bold</item>
+        -->
+        <item name="android:textColor">@color/text_color_primary_dark</item>
+        <item name="android:background">@drawable/dialog_negative_button_background</item>
+    </style>
+
+    <style name="dialog_button.positive">
+        <!--
+                <item name="android:textStyle">bold</item>
+        -->
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/dialog_positive_button_background</item>
+    </style>
+
+    <!-- <style name="dialog_title" parent="@android:style/TextAppearance.DialogWindowTitle">
+         <item name="android:gravity">center_vertical</item>
+     </style>-->
+
+
+    <!--  <style name="dialog_title" parent="@android:style/DialogWindowTitle" >
+          <item name="android:gravity">right|center_vertical</item>
+      </style>-->
+
+    <!-- <style name="DialogWindowTitle">
+         <item name="android:maxLines">1</item>
+         <item name="android:scrollHorizontally">true</item>
+         <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+     </style>-->
+
+    <!--<style name="RightJustifyTextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>-->
+
+</resources>

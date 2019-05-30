@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete_white_18px"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_timeline"
+        android:icon="@drawable/ic_timeline_white_24px"
+        android:orderInCategory="100"
+        android:title="Timeline"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_mode_edit_white_18px"
+        android:orderInCategory="100"
+        android:title="Edit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_repairlog"
+        android:icon="@drawable/ic_maintenance_edit"
+        android:orderInCategory="100"
+        android:title="Add Maintenance Log"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_clone"
+        android:icon="@drawable/ic_content_copy_white_18px"
+        android:orderInCategory="100"
+        android:title="Clone"
+        app:showAsAction="always" />
+
+</menu>
